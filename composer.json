@@ -1,0 +1,52 @@
+{
+    "name": "laravel-portugal/locale",
+    "description": "Resources lang em Português",
+    "keywords": ["laravel-portugal", "laravel", "locale", "lang", "language", "localization"],
+    "homepage": "https://github.com/laravel-portugal/locale",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Caneco",
+            "email": "caneco@me.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.1",
+        "orchestra/testbench": "^6.17",
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelPortugal\\Locale\\": "src",
+            "LaravelPortugal\\Locale\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelPortugal\\Locale\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "./vendor/bin/testbench package:test --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelPortugal\\Locale\\LocaleServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
