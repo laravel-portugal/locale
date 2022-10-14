@@ -15,6 +15,6 @@ class LocaleServiceProvider extends ServiceProvider
 
     private function registerPublishing()
     {
-        $this->publishes([__DIR__.'/../resources/lang/pt' => resource_path('lang/pt')], 'lang-pt');
+        $this->publishes([__DIR__.'/../lang/pt' => resource_path('lang/pt')], 'lang-pt');
     }
 }
