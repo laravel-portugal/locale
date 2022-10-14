@@ -3,18 +3,16 @@
 namespace LaravelPortugal\Locale;
 
 use Illuminate\Support\ServiceProvider;
+use LaravelPortugal\Locale\LocalePublishCommand;
 
 class LocaleServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
-            $this->registerPublishing();
+             $this->commands([
+                LocalePublishCommand::class,
+            ]);
         }
-    }
-
-    private function registerPublishing()
-    {
-        $this->publishes([__DIR__.'/../lang/pt' => resource_path('lang/pt')], 'lang-pt');
     }
 }
