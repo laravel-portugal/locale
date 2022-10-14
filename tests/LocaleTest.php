@@ -9,8 +9,8 @@ it('checks if the language files exist', function () {
 
     $this->artisan('laravel-portugal:locale-publish')->assertExitCode(0);
 
-    $this->assertFileExists($targetLangPath . '/auth.php');
-    $this->assertFileExists($targetLangPath . '/pagination.php');
-    $this->assertFileExists($targetLangPath . '/passwords.php');
-    $this->assertFileExists($targetLangPath . '/validation.php');
+    $this->assertFileExists($targetLangPath.'/auth.php');
+    $this->assertFileExists($targetLangPath.'/pagination.php');
+    $this->assertFileExists($targetLangPath.'/passwords.php');
+    $this->assertFileExists($targetLangPath.'/validation.php');
 });

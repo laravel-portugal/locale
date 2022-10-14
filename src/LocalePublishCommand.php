@@ -27,7 +27,7 @@ class LocalePublishCommand extends Command
             (new Filesystem())->makeDirectory($langPath);
         }
 
-        $files = collect(File::files(__DIR__ . '/../lang/pt'))
+        $files = collect(File::files(__DIR__.'/../lang/pt'))
             ->unless($this->option('force'), fn ($files) => $this->unpublished($files));
 
         $published = $this->publish($files);
