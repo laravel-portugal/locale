@@ -19,6 +19,7 @@
         "larapack/dd": "^1.1",
         "laravel/pint": "^1.2",
         "orchestra/testbench": "^6.17",
+        "pestphp/pest": "^1.22",
         "phpunit/phpunit": "^9.5",
         "vimeo/psalm": "^4.4"
     },
@@ -39,7 +40,10 @@
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {
