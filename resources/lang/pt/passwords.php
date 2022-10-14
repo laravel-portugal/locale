@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'reset'     => 'A sua senha foi alterada!',
-    'sent'      => 'Foi enviado um link por email para alterar a sua password!',
+    'reset' => 'A sua senha foi alterada!',
+    'sent' => 'Foi enviado um link por email para alterar a sua password!',
     'throttled' => 'Aguarde antes de tentar novamente.',
-    'token'     => 'Esse token de alteração de password é inválido.',
-    'user'      => "Não encontramos nenhum utilizador com esse endereço de email.",
+    'token' => 'Esse token de alteração de password é inválido.',
+    'user' => 'Não encontramos nenhum utilizador com esse endereço de email.',
 
 ];

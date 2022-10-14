@@ -17,6 +17,7 @@
     },
     "require-dev": {
         "larapack/dd": "^1.1",
+        "laravel/pint": "^1.2",
         "orchestra/testbench": "^6.17",
         "phpunit/phpunit": "^9.5",
         "vimeo/psalm": "^4.4"
