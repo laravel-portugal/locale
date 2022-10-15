@@ -1,7 +1,7 @@
 # Lang em Português
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/laravel-portugal/locale.svg?style=flat-square)](https://packagist.org/packages/laravel-portugal/locale)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/laravel-portugal/locale/Tests/master)](https://github.com/laravel-portugal/locale/actions)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/laravel-portugal/locale/Tests/main)](https://github.com/laravel-portugal/locale/actions)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel-portugal/locale.svg?style=flat-square)](https://packagist.org/packages/laravel-portugal/locale)
 
 In this repository, you can find the Portuguese lang files for your Laravel project.
